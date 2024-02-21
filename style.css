@@ -147,11 +147,30 @@ body {
 
 .widget-tabella table {
     width: 100%;
+    border-collapse: collapse;
 }
 
+.widget-tabella th,
 .widget-tabella td {
     border: 1px solid #aaa;
+    padding: 3px 6px;
 }
+
+.widget-tabella th {
+    background-color: #ddd;
+    border-bottom: 2px solid #888;
+}
+
+.widget-tabella tr:nth-child(odd) {
+    background: #eee;
+}
+
+.widget-tabella tr:hover {
+    background-color: #fcc;
+}
+
+
+/* WIDGET GRAFICO */
 
 .widget-grafico {
 }

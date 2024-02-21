@@ -87,7 +87,15 @@
                     </table>
 
                 </div>
-                <div class="widget widget-grafico">grafico</div>
+                <div class="widget widget-grafico">
+                    <form method="post" action="/ticket">
+                        <label for="i_nome">Nome</label>
+                        <input type="text" name="f_nome" id="i_nome" />
+
+                        <label for="i_cognome">Cognome</label>
+                        <input type="text" name="f_cognome" id="i_cognome" />
+                    </form>
+                </div>
             </div>
         </div>
     </main>
