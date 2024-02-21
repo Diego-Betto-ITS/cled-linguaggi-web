@@ -87,33 +87,45 @@
                     </table>
 
                 </div>
-                <div class="widget widget-grafico">
+
+                <div class="widget widget-ticket">
                     <form method="post" action="/ticket">
-                        <label for="i_nome">Nome</label>
-                        <input type="text" name="f_nome" id="i_nome" required/>
+                        <div>
+                            <label for="i_nome">Nome</label>
+                            <input type="text" name="f_nome" id="i_nome" required/>
+                        </div>
 
-                        <label for="i_cognome">Cognome</label>
-                        <input type="text" name="f_cognome" id="i_cognome" required />
+                        <div>
+                            <label for="i_cognome">Cognome</label>
+                            <input type="text" name="f_cognome" id="i_cognome" required />
+                        </div>
+                        
+                        <div>
+                            <label for="i_email">e-mail</label>
+                            <input type="email" name="f_email" id="i_email" value="email@esempio.com" readonly />
+                        </div>
 
-                        <label for="i_email">e-mail</label>
-                        <input type="email" name="f_email" id="i_email" value="email@esempio.com" readonly />
-
-                        <label for="i_tipologia">Tipologia di richiesta</label>
-                        <select name="f_tipologia" id="i_tipologia" required>
-                            <option value="">Seleziona il valore</option>
-                            <option value="1">Amministrazione</option>
-                            <option value="2">Tecnico</option>
-                            <option value="3">Social</option>
-                            <option value="4">Generico</option>
-                        </select>
+                        <div>
+                            <label for="i_tipologia">Tipologia di richiesta</label>
+                            <select name="f_tipologia" id="i_tipologia" required>
+                                <option value="">Seleziona il valore</option>
+                                <option value="1">Amministrazione</option>
+                                <option value="2">Tecnico</option>
+                                <option value="3">Social</option>
+                                <option value="4">Generico</option>
+                            </select>
+                        </div>
 
                         <label for="i_note">Note</label>
-                        <textarea name="f_note" id="i_note" rows="5" cols="40" 
+                        <textarea 
+                            name="f_note" 
+                            id="i_note" 
+                            rows="5" cols="40" 
                             maxlength="20" minlength="10" 
                             required
-                            ></textarea>
+                        ></textarea>
 
-                        <input type="submit" value="Invia ticket"/>
+                        <input type="submit" value="Invia ticket" />
                     </form>
                 </div>
             </div>
