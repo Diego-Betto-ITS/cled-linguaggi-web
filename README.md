@@ -11,3 +11,17 @@
 - [Specificità](https://specificity.keegan.st/)
 
 https://bit.ly/cled-05
+
+
+### Ripasso
+
+- [x] L'utilizzo di span invece di P (riga 47)
+- [x] 50% su stessa riga
+- [x] position absolute
+- [x] ripetizioni di classi come widget
+- [x] rgba e box shadow
+- [x] display flex
+- [x] margin e padding
+- [x] inline block
+- [x] form invio dei dati dove vanno e come
+- [x] option del select #112 (value e null)
