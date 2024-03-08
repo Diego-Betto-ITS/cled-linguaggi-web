@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header id="top-header" class="flex w-full justify-between items-center py-8 px-12 bg-stone-100">
+        <div>
+            <img src="/logo.png" alt="Logo" width="200px">
+        </div>
+        
+        <div>
+            <nav>
+                <ul>
+                    <li class="inline mx-2"><a href="/disco.html">Disco</a></li>
+                    <li class="inline mx-2"><a href="/rete.html">Rete</a></li>
+                    <li class="inline mx-2"><a href="/cpu-ram.html">CPU/RAM</a></li>
+                    <li class="inline mx-2"><a href="/fatture.html">Fatture</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--
+Natalia: se leggi vai qua (ufficialmente assente ma se vuoi seguire con audio collegati pure)
+
+https://meet.google.com/paa-sxsa-oiv 
+-->
+
+    <main id="main" class="row flex">
+        <div id="sidebar" class="col w-64">
+            <ul>
+                <li><a class="p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white" href="#">Voce 1</a></li>
+                <li><a class="p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white" href="#">Voce 2</a></li>
+                <li><a class="p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white" href="#">Voce 3</a></li>
+                <li><a class="p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white" href="#">Voce 4</a></li>
+                <li><a class="p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white" href="#">Voce 5</a></li>
+            </ul>
+        </div>
+
+        <div id="content" class="col w-full">
+            <div class="row flex">
+                <div class="widget w-full bg-green-600 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero">
+                    <span class="label w-[40%] inline-block">DISCO</span>
+                    <span class="value w-[58%] text-3xl inline-block text-right">67%</span>
+                    <a class="mt-4 px-2 block text-right bg-green-700 " href="#">></a>
+                </div>
+
+                <div class="widget w-full bg-red-700 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero widget-danger">
+                    <span class="label w-[40%] inline-block">RETE</span>
+                    <span class="value w-[58%] text-3xl inline-block text-right">900 MB/s</span>
+                    <a class="mt-4 px-2 block text-right bg-red-800 " href="#">></a>
+                </div>
+
+                <div class="widget w-full bg-red-700 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero widget-danger">
+                    <span class="label w-[40%] inline-block">CPU / RAM</span>
+                    <span class="value w-[58%] text-3xl inline-block text-right">10% / 49%</span>
+                    <a class="mt-4 px-2 block text-right bg-red-800 " href="#">></a>
+                </div>
+            </div>
+
+            <style type="text/tailwindcss">
+                
+              </style>
+
+            <div class="row">
+                <div class="widget widget-tabella">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>URL</th>
+                                <th>Count</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>/home</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>/about</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>/store</td>
+                                <td>14031</td>
+                            </tr>
+                            <tr>
+                                <td>/login</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="widget widget-ticket">
+                    <form method="post" action="/ticket">
+                        <div><label for="i_nome">Nome</label><input type="text" name="f_nome" id="i_nome" required/></div>
+
+                        <div><label for="i_cognome">Cognome</label><input type="text" name="f_cognome" id="i_cognome" required /></div>
+                        
+                        <div><label for="i_email">e-mail</label><input type="email" name="f_email" id="i_email" value="email@esempio.com" readonly /></div>
+
+                        <div><label for="i_tipologia">Tipologia di richiesta</label><select name="f_tipologia" id="i_tipologia" required>
+                                <option value="">Seleziona il valore</option>
+                                <option value="1">Amministrazione</option>
+                                <option value="2">Tecnico</option>
+                                <option value="3">Social</option>
+                                <option value="4">Generico</option>
+                            </select></div>
+
+                        <label for="i_note">Note</label>
+                        <textarea 
+                            name="f_note" 
+                            id="i_note" 
+                            rows="5" cols="40" 
+                            maxlength="20" minlength="10" 
+                            required
+                        ></textarea>
+
+                        <div class="actions">
+                            <input type="submit" value="Invia ticket" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="bottom-footer">
+        <div>
+            <img src="/logo.png" alt="Logo" width="100px">
+            <p>
+                ACME inc<br />
+                via di QUA, 69<br />
+                <a href="mailto:email@test.com">email@test.com</a>
+            </p>
+        </div>
+
+        <div>
+            <h3>Sezioni</h3>
+            <nav>
+                <ul>
+                    <li><a href="fatture.html">Fatture</a></li>
+                    <li><a href="resi.html">Resi</a></li>
+                    <li><a href="legali.html">Info Legali</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div>
+            <h3>Supporto</h3>
+            <nav>
+                <ul>
+                    <li><a href="ticket.html">Ticket</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="reclami.html">Reclami</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="footer__last-widget">
+            <div>
+                <ul>
+                    <li><a href="https://facebook.com"><img /></a></li>
+                    <li><a href="https://twitter.com"><img /></a></li>
+                    <li><a href="https://linkedin.com"><img /></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="/cookie-policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
