@@ -25,3 +25,8 @@ https://bit.ly/cled-05
 - [x] inline block
 - [x] form invio dei dati dove vanno e come
 - [x] option del select #112 (value e null)
+
+
+## Avvio
+Per avviare il progetto esegui
+`npm run start`

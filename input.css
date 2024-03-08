@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#top-header {
+    @apply flex w-full justify-between items-center py-8 px-12 bg-green-300;
+}
+
+#top-header li {
+    @apply mx-2 inline;
+}
+
+#sidebar a {
+    @apply p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white;
+}
