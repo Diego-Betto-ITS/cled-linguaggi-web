@@ -13,3 +13,62 @@
 #sidebar a {
     @apply p-2 block uppercase text-neutral-500 hover:bg-red-600 hover:text-white;
 }
+
+.widget {
+    @apply m-2.5 rounded shadow border border-neutral-200 mb-4 md:mb-2 lg:mb-0;
+}
+
+.widget-numero {
+    @apply bg-green-600 p-2 text-white w-full;
+}
+
+.widget-danger {
+    @apply bg-red-700;
+}
+
+.widget .label {
+    @apply w-full block xl:w-[40%] xl:inline-block;
+}
+
+.widget .value {
+    @apply w-full block text-3xl text-right xl:w-[58%] xl:inline-block;
+}
+
+.widget a {
+    @apply mt-4 px-2 block text-right bg-green-700;
+}
+
+.widget-danger a {
+    @apply bg-red-800;
+}
+
+/* TABELLA */
+
+.widget-tabella {
+    @apply p-2;
+}
+
+.widget-tabella table {
+    @apply w-full;
+}
+
+.widget-tabella td,
+.widget-tabella th {
+    @apply p-1;
+}
+
+.widget-tabella th {
+    @apply bg-neutral-300 border border-neutral-500 border-b-2 border-b-neutral-800;
+}
+
+.widget-tabella td {
+    @apply border border-neutral-500;
+}
+
+.widget-tabella tr:nth-child(odd) {
+    @apply bg-neutral-200;
+}
+
+.widget-tabella tr {
+    @apply hover:bg-pink-200;
+}

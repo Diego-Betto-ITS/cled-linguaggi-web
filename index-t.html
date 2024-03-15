@@ -26,7 +26,7 @@
     </header>
 
     <main id="main" class="row flex">
-        <div id="sidebar" class="col w-64">
+        <div id="sidebar" class="col hidden w-64 md:block">
             <ul>
                 <li><a href="#">Voce 1</a></li>
                 <li><a href="#">Voce 2</a></li>
@@ -37,32 +37,28 @@
         </div>
 
         <div id="content" class="col w-full">
-            <div class="row flex">
-                <div class="widget w-full bg-green-600 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero">
-                    <span class="label w-[40%] inline-block">DISCO</span>
-                    <span class="value w-[58%] text-3xl inline-block text-right">67%</span>
-                    <a class="mt-4 px-2 block text-right bg-green-700 " href="#">></a>
+            <div class="row flex flex-col md:flex-row">
+                <div class="widget widget-numero">
+                    <span class="label">DISCO</span>
+                    <span class="value">67%</span>
+                    <a href="#">></a>
                 </div>
 
-                <div class="widget w-full bg-red-700 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero widget-danger">
-                    <span class="label w-[40%] inline-block">RETE</span>
-                    <span class="value w-[58%] text-3xl inline-block text-right">900 MB/s</span>
-                    <a class="mt-4 px-2 block text-right bg-red-800 " href="#">></a>
+                <div class="widget widget-numero widget-danger">
+                    <span class="label">RETE</span>
+                    <span class="value">900 MB/s</span>
+                    <a href="#">></a>
                 </div>
 
-                <div class="widget w-full bg-red-700 p-2 text-white mx-2.5 rounded shadow border border-neutral-200 widget-numero widget-danger">
-                    <span class="label w-[40%] inline-block">CPU / RAM</span>
-                    <span class="value w-[58%] text-3xl inline-block text-right">10% / 49%</span>
-                    <a class="mt-4 px-2 block text-right bg-red-800 " href="#">></a>
+                <div class="widget widget-numero widget-danger">
+                    <span class="label">CPU / RAM</span>
+                    <span class="value">10% / 49%</span>
+                    <a href="#">></a>
                 </div>
             </div>
 
-            <style type="text/tailwindcss">
-                
-              </style>
-
-            <div class="row">
-                <div class="widget widget-tabella">
+            <div class="row flex flex-col md:flex-row">
+                <div class="widget widget-tabella w-full">
                     <table>
                         <thead>
                             <tr>
@@ -93,7 +89,7 @@
 
                 </div>
 
-                <div class="widget widget-ticket">
+                <div class="widget widget-ticket w-full">
                     <form method="post" action="/ticket">
                         <div><label for="i_nome">Nome</label><input type="text" name="f_nome" id="i_nome" required/></div>
 
