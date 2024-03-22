@@ -6,6 +6,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="output.css" />
+
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js" charset="utf-8"></script>
 </head>
 <body>
     <header id="top-header">
@@ -87,6 +89,20 @@
                         </tbody>
                     </table>
 
+
+                    <div id="grafico" style="width:100%;height:250px;background-color:#fcc;margin-top: 2rem;"></div>
+                    <script>
+                        Grafico = document.getElementById('grafico');
+                        Plotly.newPlot( 
+                            Grafico, 
+                            [{
+                                x: [12, 15, 18, 21, 24, 27],
+                                y: [10, 25, 15, 60, 70, 80] 
+                            }], 
+                            {margin: { t: 0 } } ,
+                            {responsive: true}
+                        );
+                    </script>
                 </div>
 
                 <div class="widget widget-ticket w-full">

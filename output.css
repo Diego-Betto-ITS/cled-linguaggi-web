@@ -699,7 +699,7 @@ video {
   }
 }
 
-.widget a {
+.widget-numero a {
   margin-top: 1rem;
   display: block;
   --tw-bg-opacity: 1;
@@ -753,6 +753,79 @@ video {
 .widget-tabella tr:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+}
+
+#bottom-footer {
+  margin-top: 2rem;
+  display: flex;
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  & > div {
+    width: 100%;
+  }
+  & > div {
+    &:first-child {
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+    &:last-child {
+      li {
+        display: inline-block;
+      }
+      li {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.widget-ticket {
+  padding: 1rem;
+  form {
+    & > div {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    label {
+      width: 30%;
+    }
+    input[type="text"],
+        input[type="email"],
+        select{
+      width: 100%;
+      border: 1px solid #aaa;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+    }
+    input[type="submit"] {
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #bbb;
+    }
+    textarea {
+      border: 1px solid #aaa;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 768px) {

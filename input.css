@@ -34,7 +34,7 @@
     @apply w-full block text-3xl text-right xl:w-[58%] xl:inline-block;
 }
 
-.widget a {
+.widget-numero a {
     @apply mt-4 px-2 block text-right bg-green-700;
 }
 
@@ -71,4 +71,67 @@
 
 .widget-tabella tr {
     @apply hover:bg-pink-200;
+}
+
+#bottom-footer {
+    @apply flex bg-neutral-500 py-8 mt-8 px-8 text-white; 
+
+    & > div {
+        @apply w-full;
+
+        &:first-child {
+            img {
+                @apply mb-4;
+            }
+        }
+
+        &:last-child {
+            li {
+                @apply inline-block px-1;
+            }
+        }
+    }
+
+    h3 {
+        @apply font-bold mb-2;
+    }
+}
+
+.widget-ticket {
+    padding: 1rem;
+    
+    form {
+        & > div {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            width: 30%;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select{
+            width: 100%;
+            border: 1px solid #aaa;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            @apply bg-neutral-200;
+
+
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid #bbb;
+        }
+        
+        textarea {
+            border: 1px solid #aaa;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
 }
