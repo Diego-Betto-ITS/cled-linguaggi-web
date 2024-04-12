@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer class="main-footer">
+        <div class="footer__wrapper">
+            <section>
+                <h3>ACME</h3>
+                <address>
+                    via di Qua, 69<br />
+                    Pordenone (PN)<br /><br />
+
+                    email: <a href="mailto:info@acme.ve">info@acme.ve</a><br />
+                    tel: <a href="tel:+39001122">001122</a>
+                </address>
+            </section>
+
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="/link1.html">Pagina 1</a></li>
+                        <li><a href="/link2.html">Pagina 2</a></li>
+                        <li><a href="/link3.html">Pagina 3</a></li>
+                        <li><a href="/link4.html">Pagina 4</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="/link5.html">Pagina 5</a></li>
+                        <li><a href="/link6.html">Pagina 6</a></li>
+                        <li><a href="/link7.html">Pagina 7</a></li>
+                        <li><a href="/link8.html">Pagina 8</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <a href="https://mihannodatotantisoldi.com" target="_blank">
+                    <img src="/img/contributi.png" alt="Logo Contributi Regionali">
+                </a>
+            </section>
+        </div>
+    </footer>
+
+    <style>
+        body {
+    margin: 0;
+}
+
+.main-footer {
+    background-color: #eee;
+    padding: 1rem 0;
+}
+
+.main-footer .footer__wrapper {
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-footer h3 {
+    margin-top: 0;
+}
+
+.main-footer section {
+    flex: 1 1 100%;
+}
+
+.main-footer section {
+    flex: 1 1 25%;
+}
+
+.main-footer section:last-child {
+    flex: 1 1 50%;
+}
+
+.main-footer a {
+    color: #3a3;
+}
+
+.main-footer ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer nav + nav {
+    margin-top: 2rem
+}
+
+
+    </style>
+</body>
+</html>
